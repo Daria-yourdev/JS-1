@@ -14,15 +14,15 @@
         const money = +prompt("Введите количество денег:");
 
         if (price < 0 || money < 0) {
-            console.log("Неверный формат ввода");
+            alert("Неверный формат ввода");
         } else if (price === money) {
-            console.log("Покупка совершена");
+            alert("Покупка совершена");
         } else if (price > money) {
             const moremoney = price - money;
-            console.log(`Для покупки не хватает ${moremoney} р.`);
+            calert(`Для покупки не хватает ${moremoney} р.`);
         } else {
             const change = money - price;
-            console.log(`Покупка совершена. Сдача ${change} р.`);
+            alert(`Покупка совершена. Сдача ${change} р.`);
         }
 
         // 2
