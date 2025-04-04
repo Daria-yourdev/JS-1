@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1
+        const price = +prompt("Введите стоимость товара:");
+        const money = +prompt("Введите количество денег:");
+
+        if (price < 0 || money < 0) {
+            console.log("Неверный формат ввода");
+        } else if (price === money) {
+            console.log("Покупка совершена");
+        } else if (price > money) {
+            const moremoney = price - money;
+            console.log(`Для покупки не хватает ${moremoney} р.`);
+        } else {
+            const change = money - price;
+            console.log(`Покупка совершена. Сдача ${change} р.`);
+        }
+
+        // 2
+        const number = +prompt("Введите число:");
+
+        if (number > 0) {
+            alert(1);
+        } else if (number < 0) {
+            alert(-1);
+        } else {
+            alert(0);
+        }
+
+        // 3
+        let result = (a + b < 4) ? 'Мало' : 'Много';
+    </script>
+</body>
+
+</html>
